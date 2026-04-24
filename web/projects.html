@@ -1,0 +1,115 @@
+<section id="projects" class="projects-section">
+    <div class="container">
+        <div class="projects-header" data-aos="fade-up">
+            <div class="projects-header-left">
+                <h2 class="section-title" style="margin-bottom: 8px; text-align: left;">
+                    Selected <span class="text-gradient">Projects</span>
+                </h2>
+                <p class="section-subtitle" style="text-align: left; color: var(--text-secondary); font-size: 0.95rem; text-transform: uppercase; letter-spacing: 2px; font-weight: 600; margin-bottom: 0;">
+                    Design Projects
+                </p>
+            </div>
+            <div class="projects-header-right">
+                <a href="#" class="btn-view-more" onclick="routeToArchive(event)">View More <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+        </div>
+
+        <div class="projects-grid">
+
+             <!-- Project Card 1: Geometric -->
+             <div class="project-card glass-panel" data-aos="fade-up" data-aos-delay="100">
+                <div class="project-img-wrapper">
+                    <!-- Base background removed for SVG clarity, but keeping styling hook -->
+                    <div class="project-img bg-geo">
+                        <svg viewBox="0 0 128 128" class="morph-svg svg-card-1 filter-svg">
+                            <filter id="displacementFilter">
+                                <feTurbulence type="turbulence" numOctaves="2" baseFrequency="0" result="turbulence" />
+                                <feDisplacementMap in2="turbulence" in="SourceGraphic" scale="1" xChannelSelector="R"
+                                    yChannelSelector="G" />
+                            </filter>
+                            <polygon class="p1-shape" points="64 128 8.574 96 8.574 32 64 0 119.426 32 119.426 96"
+                                style="filter: url(#displacementFilter);"></polygon>
+                        </svg>
+                    </div>
+                    <div class="project-overlay">
+                        <button class="btn btn-primary btn-zoom">View Project</button>
+                    </div>
+                </div>
+                <div class="project-info">
+                    <span class="project-tag">Branding Identity</span>
+                    <h3 class="project-title">Geometric Evolution</h3>
+                    <p class="project-desc">A conceptual rebrand focusing on sharp, modern minimalism and precise
+                        spatial geometry.</p>
+                </div>
+            </div>
+
+            <!-- Project Card 2: Organic Blob -->
+            <div class="project-card glass-panel" data-aos="fade-up" data-aos-delay="200">
+                <div class="project-img-wrapper">
+                    <div class="project-img bg-organic">
+                        <svg viewBox="0 0 304 112" class="morph-svg svg-card-2"
+                            style="width:100%; max-width: 250px; height: auto;">
+                            <!-- Removed fill constraints to let the user's g tag control it -->
+                            <g stroke-width="2" stroke="currentColor" stroke-linejoin="round" fill="none"
+                                fill-rule="evenodd">
+                                <polygon class="p2-shape" id="path-1"
+                                    points="152,4 170,38 204,56 170,74 152,108 134,74 100,56 134,38"></polygon>
+                            </g>
+                        </svg>
+                    </div>
+                    <div class="project-overlay">
+                        <button class="btn btn-primary btn-zoom">View Project</button>
+                    </div>
+                </div>
+                <div class="project-info">
+                    <span class="project-tag">UI/UX Design</span>
+                    <h3 class="project-title">Fluid Interfaces</h3>
+                    <p class="project-desc">A modern interface concept focused on interaction clarity, visual rhythm, and accessibility-first UI/UX thinking.</p>
+                </div>
+            </div>
+
+            <!-- Project Card 3: Landing Page UI -->
+            <div class="project-card glass-panel" data-aos="fade-up" data-aos-delay="300">
+                <div class="project-img-wrapper">
+                    <div class="project-img">
+                        <img src="assets/img/landing_page_ui.png" alt="Landing Page UI Project">
+                    </div>
+                    <div class="project-overlay">
+                        <button class="btn btn-primary btn-zoom">View Project</button>
+                    </div>
+                </div>
+                <div class="project-info">
+                    <span class="project-tag">SaaS Dashboard UI</span>
+                    <h3 class="project-title">Nova Workflow Platform</h3>
+                    <p class="project-desc">Neon-inspired productivity dashboard concept focused on team insights and streamlined project tracking.</p>
+                </div>
+            </div>
+
+            <!-- Project Card 4: Creative Agency Direction -->
+            <div class="project-card glass-panel" data-aos="fade-up" data-aos-delay="400">
+                <div class="project-img-wrapper">
+                    <div class="project-img">
+                        <img src="assets/projects/creative_agency_landing.png" alt="Creative Agency Direction Project">
+                    </div>
+                    <div class="project-overlay">
+                        <button class="btn btn-primary btn-zoom">View Project</button>
+                    </div>
+                </div>
+                <div class="project-info">
+                    <span class="project-tag">Creative Direction</span>
+                    <h3 class="project-title">Aura Digital Visions</h3>
+                    <p class="project-desc">An immersive visual campaign exploring typography, composition, and storytelling across brand and web experiences.</p>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Project Lightbox Modal -->
+        <div id="project-modal" class="modal-overlay">
+            <div class="modal-content glass-panel">
+                <button class="modal-close" aria-label="Close Modal"><i class="fa-solid fa-xmark"></i></button>
+                <div id="modal-media-container"></div>
+            </div>
+        </div>
+    </div>
+</section>

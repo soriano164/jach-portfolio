@@ -1,0 +1,52 @@
+:root {
+    /* Base Variables (Light Mode Default) */
+    --bg-primary: #f8fafc;
+    --bg-secondary: #ffffff;
+    --bg-glass: rgba(255, 255, 255, 0.7);
+    
+    --text-primary: #0f172a;
+    --text-secondary: #475569;
+    --text-muted: #94a3b8;
+    
+    /* Brand Gradients (Purple to Blue) */
+    --accent-start: #8b5cf6;
+    --accent-end: #3b82f6;
+    --accent-glow: rgba(139, 92, 246, 0.3);
+    --hero-portrait-url: url('../assets/img/girl_portrait_light.png');
+    --hero-skeleton-gradient: linear-gradient(120deg, rgba(234, 239, 247, 0.92) 25%, rgba(221, 229, 241, 0.98) 50%, rgba(234, 239, 247, 0.92) 75%);
+    --hero-skeleton-line: rgba(15, 23, 42, 0.14);
+    --hero-text-skeleton-gradient: linear-gradient(120deg, rgba(15, 23, 42, 0.08) 25%, rgba(15, 23, 42, 0.14) 45%, rgba(15, 23, 42, 0.08) 75%);
+    
+    /* Surfaces / Borders */
+    --border-color: rgba(15, 23, 42, 0.1);
+    --card-shadow: 0 10px 30px -10px rgba(0,0,0,0.05);
+    
+    /* UI Values */
+    --radius-sm: 8px;
+    --radius-md: 16px;
+    --radius-lg: 24px;
+    --radius-pill: 999px;
+    --transition-fast: 0.2s ease;
+    --transition-smooth: 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+[data-theme="dark"] {
+    --bg-primary: #09090b;
+    --bg-secondary: #121214;
+    --bg-glass: rgba(9, 9, 11, 0.75);
+    
+    --text-primary: #f8fafc;
+    --text-secondary: #cbd5e1;
+    --text-muted: #64748b;
+    
+    --accent-start: #a78bfa;
+    --accent-end: #60a5fa;
+    --accent-glow: rgba(167, 139, 250, 0.2);
+    --hero-portrait-url: url('../assets/img/girl_portrait_dark.png');
+    --hero-skeleton-gradient: linear-gradient(120deg, rgba(22, 27, 43, 0.88) 25%, rgba(34, 42, 65, 0.95) 50%, rgba(22, 27, 43, 0.88) 75%);
+    --hero-skeleton-line: rgba(255, 255, 255, 0.22);
+    --hero-text-skeleton-gradient: linear-gradient(120deg, rgba(255, 255, 255, 0.16) 25%, rgba(255, 255, 255, 0.3) 45%, rgba(255, 255, 255, 0.16) 75%);
+    
+    --border-color: rgba(248, 250, 252, 0.1);
+    --card-shadow: 0 10px 30px -10px rgba(0,0,0,0.5);
+}

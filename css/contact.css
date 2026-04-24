@@ -1,0 +1,192 @@
+.contact-section {
+    background-color: var(--bg-secondary);
+}
+
+.contact-container {
+    display: flex;
+    gap: 80px;
+    align-items: center;
+}
+
+.contact-info-panel {
+    flex: 1;
+    max-width: 500px;
+}
+
+.contact-info-panel .section-title {
+    text-align: left;
+    margin-bottom: 24px;
+    font-size: clamp(2.5rem, 5vw, 4rem);
+    line-height: 1.1;
+}
+
+.contact-pitch {
+    font-size: 1.1rem;
+    color: var(--text-secondary);
+    margin-bottom: 40px;
+    line-height: 1.8;
+}
+
+.contact-direct {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.direct-item {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.direct-label {
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: var(--accent-start);
+    letter-spacing: 1px;
+}
+
+.direct-link, .direct-text {
+    font-size: 1.25rem;
+    color: var(--text-primary);
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.direct-link:hover {
+    text-decoration: underline;
+    text-decoration-color: var(--accent-start);
+    text-underline-offset: 4px;
+}
+
+/* Form Panel Details */
+.contact-form-panel {
+    flex: 1.2;
+    padding: 48px;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.input-label {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: var(--text-primary);
+    margin-bottom: 8px;
+    display: block;
+}
+
+/* Graphic Design Custom Pill Selectors */
+.project-type-wrapper {
+    margin-bottom: 8px;
+}
+
+.custom-radios {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+.radio-pill input {
+    display: none;
+}
+
+.radio-pill span {
+    display: inline-block;
+    padding: 10px 20px;
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-pill);
+    background: transparent;
+    color: var(--text-secondary);
+    font-size: 0.9rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all var(--transition-fast);
+}
+
+.radio-pill input:checked + span {
+    background: var(--text-primary);
+    color: var(--bg-primary);
+    border-color: var(--text-primary);
+}
+
+.radio-pill span:hover {
+    border-color: var(--text-primary);
+}
+
+/* Normal Input Elements */
+.input-row {
+    display: flex;
+    gap: 20px;
+}
+
+.input-group {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.input-group input,
+.input-group textarea {
+    width: 100%;
+    padding: 16px;
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-sm);
+    color: var(--text-primary);
+    font-family: inherit;
+    font-size: 1rem;
+    transition: all var(--transition-fast);
+}
+
+[data-theme="light"] .input-group input,
+[data-theme="light"] .input-group textarea {
+    background: rgba(0, 0, 0, 0.02);
+}
+
+.input-group input:focus,
+.input-group textarea:focus {
+    outline: none;
+    border-color: var(--accent-start);
+    box-shadow: 0 0 0 4px var(--accent-glow);
+    background: transparent;
+}
+
+.submit-btn {
+    width: 100%;
+    margin-top: 16px;
+    padding: 16px;
+    font-size: 1.1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (max-width: 900px) {
+    .contact-container {
+        flex-direction: column;
+        gap: 60px;
+    }
+    .contact-info-panel .section-title {
+        text-align: center;
+    }
+    .contact-pitch {
+        text-align: center;
+    }
+    .contact-direct {
+        align-items: center;
+        text-align: center;
+    }
+    .contact-form-panel {
+        width: 100%;
+        padding: 32px;
+    }
+    .input-row {
+        flex-direction: column;
+        gap: 24px;
+    }
+}

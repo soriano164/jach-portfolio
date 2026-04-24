@@ -1,0 +1,269 @@
+<section id="archive" class="archive-section">
+    <div class="container">
+        
+        <div class="archive-header" data-aos="fade-up">
+            <h1 class="archive-title">
+                All <span class="text-gradient">Projects</span>
+            </h1>
+            <a href="#" class="btn-back-home" onclick="routeToHome(event)">
+                <i class="fa-solid fa-arrow-left"></i> Back to Home
+            </a>
+        </div>
+
+        <div class="archive-grid">
+
+            <!-- Project Card 1: Geometric -->
+            <div class="project-card glass-panel" data-aos="fade-up" data-aos-delay="100">
+                <div class="project-img-wrapper">
+                    <!-- Base background removed for SVG clarity, but keeping styling hook -->
+                    <div class="project-img bg-geo">
+                        <svg viewBox="0 0 128 128" class="morph-svg svg-card-1 filter-svg">
+                            <filter id="displacementFilter">
+                                <feTurbulence type="turbulence" numOctaves="2" baseFrequency="0" result="turbulence" />
+                                <feDisplacementMap in2="turbulence" in="SourceGraphic" scale="1" xChannelSelector="R"
+                                    yChannelSelector="G" />
+                            </filter>
+                            <polygon class="p1-shape" points="64 128 8.574 96 8.574 32 64 0 119.426 32 119.426 96"
+                                style="filter: url(#displacementFilter);"></polygon>
+                        </svg>
+                    </div>
+                    <div class="project-overlay">
+                        <button class="btn btn-primary btn-zoom">View Project</button>
+                    </div>
+                </div>
+                <div class="project-info">
+                    <span class="project-tag">Branding Identity</span>
+                    <h3 class="project-title">Geometric Evolution</h3>
+                    <p class="project-desc">A conceptual rebrand focusing on sharp, modern minimalism and precise
+                        spatial geometry.</p>
+                </div>
+            </div>
+
+            <!-- Project Card 2: Organic Blob -->
+            <div class="project-card glass-panel" data-aos="fade-up" data-aos-delay="200">
+                <div class="project-img-wrapper">
+                    <div class="project-img bg-organic">
+                        <svg viewBox="0 0 304 112" class="morph-svg svg-card-2"
+                            style="width:100%; max-width: 250px; height: auto;">
+                            <!-- Removed fill constraints to let the user's g tag control it -->
+                            <g stroke-width="2" stroke="currentColor" stroke-linejoin="round" fill="none"
+                                fill-rule="evenodd">
+                                <polygon class="p2-shape" id="path-1"
+                                    points="152,4 170,38 204,56 170,74 152,108 134,74 100,56 134,38"></polygon>
+                            </g>
+                        </svg>
+                    </div>
+                    <div class="project-overlay">
+                        <button class="btn btn-primary btn-zoom">View Project</button>
+                    </div>
+                </div>
+                <div class="project-info">
+                    <span class="project-tag">UI/UX Design</span>
+                    <h3 class="project-title">Fluid Interfaces</h3>
+                    <p class="project-desc">User interface design embracing highly organic, fluid curves and soft
+                        glassmorphic layers.</p>
+                </div>
+            </div>
+
+            <!-- Project Card 3: Automation System -->
+            <div class="project-card glass-panel" data-aos="fade-up" data-aos-delay="300">
+                <div class="project-img-wrapper">
+                    <div class="project-img bg-tech">
+                        <!-- Custom viewBox to match the Suzuka layout provided -->
+                        <svg viewBox="0 0 304 112" class="morph-svg svg-card-3"
+                            style="width: 100%; max-width: 260px; height: auto; overflow: visible;">
+                            <g stroke="none" fill="none" fill-rule="evenodd">
+                                <path class="p3-path"
+                                    d="M189.142857,4 C227.456875,4 248.420457,4.00974888 256.864191,4.00974888 C263.817211,4.00974888 271.61219,3.69583517 274.986231,6.63061513 C276.382736,7.84531176 279.193529,11.3814152 280.479499,13.4815847 C281.719344,15.5064248 284.841964,20.3571626 275.608629,20.3571626 C265.817756,20.3571626 247.262478,19.9013915 243.955117,19.9013915 C239.27946,19.9013915 235.350655,24.7304885 228.6344,24.7304885 C224.377263,24.7304885 219.472178,21.0304113 214.535324,21.0304113 C207.18393,21.0304113 200.882842,30.4798911 194.124187,30.4798911 C186.992968,30.4798911 182.652552,23.6245972 173.457298,23.6245972 C164.83277,23.6245972 157.191045,31.5424105 157.191045,39.1815359 C157.191045,48.466779 167.088672,63.6623005 166.666679,66.9065088 C166.378668,69.1206889 155.842137,79.2568633 151.508744,77.8570506 C145.044576,75.7689355 109.126667,61.6405346 98.7556561,52.9785141 C96.4766876,51.0750861 89.3680347,39.5769094 83.4195005,38.5221785 C80.6048001,38.0231057 73.0179337,38.7426555 74.4158694,42.6956376 C76.7088819,49.1796531 86.3280337,64.1214904 87.1781062,66.9065088 C88.191957,70.2280995 86.4690152,77.0567847 82.2060607,79.2503488 C79.2489435,80.7719756 73.1324132,82.8858479 64.7015706,83.0708761 C55.1604808,83.2802705 44.4254811,80.401884 39.1722168,80.401884 C25.7762119,80.401884 24.3280517,89.1260466 22.476679,94.4501705 C21.637667,96.8629767 20.4337535,108 33.2301959,108 C37.8976087,108 45.0757044,107.252595 53.4789069,103.876424 C61.8821095,100.500252 122.090049,78.119656 128.36127,75.3523302 C141.413669,69.5926477 151.190142,68.4987755 147.018529,52.0784879 C143.007818,36.291544 143.396957,23.4057975 145.221196,19.6589263 C146.450194,17.1346449 148.420955,14.8552817 153.206723,15.7880203 C155.175319,16.1716965 155.097637,15.0525421 156.757598,11.3860986 C158.417558,7.71965506 161.842736,4.00974888 167.736963,4.00974888 C177.205308,4.00974888 184.938832,4 189.142857,4 Z"
+                                    stroke="currentColor" stroke-width="2"></path>
+                            </g>
+                            <rect class="p3-car" width="16" height="8" fill="var(--text-primary)" rx="2" x="-8" y="-4"
+                                style="pointer-events: none;"></rect>
+                        </svg>
+                    </div>
+                    <div class="project-overlay">
+                        <button class="btn btn-primary btn-zoom">View Project</button>
+                    </div>
+                </div>
+                <div class="project-info">
+                    <span class="project-tag">Digital Art</span>
+                    <h3 class="project-title">Cyber Topology</h3>
+                    <p class="project-desc">An exploratory layout design exploring stark, cyber-punk influenced
+                        topological mapping through fluid motion tracing.</p>
+                </div>
+            </div>
+
+            <!-- Project Card 4: Geometric Evolution (Showcase) -->
+            <div class="project-card glass-panel" data-aos="fade-up" data-aos-delay="400">
+                <div class="project-img-wrapper">
+                    <div class="project-img">
+                        <img src="assets/projects/geometric_evolution.png" alt="Geometric Evolution Project Showcase">
+                    </div>
+                    <div class="project-overlay">
+                        <button class="btn btn-primary btn-zoom">View Project</button>
+                    </div>
+                </div>
+                <div class="project-info">
+                    <span class="project-tag">Brand Identity Showcase</span>
+                    <h3 class="project-title">Geometric Evolution Showcase</h3>
+                    <p class="project-desc">Static project showcase for geometric branding applications and visual system exploration.</p>
+                </div>
+            </div>
+
+            <!-- Project Card 5: Fluid Interfaces (Showcase) -->
+            <div class="project-card glass-panel" data-aos="fade-up" data-aos-delay="500">
+                <div class="project-img-wrapper">
+                    <div class="project-img">
+                        <img src="assets/projects/fluid_interfaces.png" alt="Fluid Interfaces Project Showcase">
+                    </div>
+                    <div class="project-overlay">
+                        <button class="btn btn-primary btn-zoom">View Project</button>
+                    </div>
+                </div>
+                <div class="project-info">
+                    <span class="project-tag">UI/UX Showcase</span>
+                    <h3 class="project-title">Fluid Interfaces Showcase</h3>
+                    <p class="project-desc">Visual case study presenting fluid interaction patterns and modern interface composition.</p>
+                </div>
+            </div>
+
+            <!-- Project Card 6: Cyber Topology (Showcase) -->
+            <div class="project-card glass-panel" data-aos="fade-up" data-aos-delay="600">
+                <div class="project-img-wrapper">
+                    <div class="project-img">
+                        <img src="assets/projects/cyber_topology.png" alt="Cyber Topology Project Showcase">
+                    </div>
+                    <div class="project-overlay">
+                        <button class="btn btn-primary btn-zoom">View Project</button>
+                    </div>
+                </div>
+                <div class="project-info">
+                    <span class="project-tag">Digital Art Showcase</span>
+                    <h3 class="project-title">Cyber Topology Showcase</h3>
+                    <p class="project-desc">High-energy visualization artwork featuring neon mapping lines and futuristic topology forms.</p>
+                </div>
+            </div>
+
+            <!-- Project Card 7: Eco-Flow Wellness -->
+            <div class="project-card glass-panel" data-aos="fade-up" data-aos-delay="400">
+                <div class="project-img-wrapper">
+                    <div class="project-img">
+                        <img src="assets/projects/wellness_landing.png" alt="Eco-Flow Wellness Landing Page">
+                    </div>
+                    <div class="project-overlay">
+                        <button class="btn btn-primary btn-zoom">View Project</button>
+                    </div>
+                </div>
+                <div class="project-info">
+                    <span class="project-tag">Landing Page Design</span>
+                    <h3 class="project-title">Eco-Flow Wellness</h3>
+                    <p class="project-desc">A clean, organic landing page for a premium wellness and spa retreat.</p>
+                </div>
+            </div>
+
+            <!-- Project Card 8: Nexus SaaS Platform -->
+            <div class="project-card glass-panel" data-aos="fade-up" data-aos-delay="500">
+                <div class="project-img-wrapper">
+                    <div class="project-img">
+                        <img src="assets/projects/saas_landing.png" alt="Nexus SaaS Platform Landing Page">
+                    </div>
+                    <div class="project-overlay">
+                        <button class="btn btn-primary btn-zoom">View Project</button>
+                    </div>
+                </div>
+                <div class="project-info">
+                    <span class="project-tag">SaaS Architecture</span>
+                    <h3 class="project-title">Nexus SaaS Platform</h3>
+                    <p class="project-desc">Modern data-driven landing page for a high-performance analytics platform.</p>
+                </div>
+            </div>
+
+            <!-- Project Card 9: Lumina Fashion -->
+            <div class="project-card glass-panel" data-aos="fade-up" data-aos-delay="600">
+                <div class="project-img-wrapper">
+                    <div class="project-img">
+                        <img src="assets/projects/fashion_landing.png" alt="Lumina Fashion E-commerce">
+                    </div>
+                    <div class="project-overlay">
+                        <button class="btn btn-primary btn-zoom">View Project</button>
+                    </div>
+                </div>
+                <div class="project-info">
+                    <span class="project-tag">E-commerce Design</span>
+                    <h3 class="project-title">Lumina Fashion</h3>
+                    <p class="project-desc">Luxury fashion landing page with a minimalist aesthetic and premium feel.</p>
+                </div>
+            </div>
+
+            <!-- Project Card 10: Zenith Real Estate -->
+            <div class="project-card glass-panel" data-aos="fade-up" data-aos-delay="700">
+                <div class="project-img-wrapper">
+                    <div class="project-img">
+                        <img src="assets/projects/real_estate_landing.png" alt="Zenith Real Estate Landing Page">
+                    </div>
+                    <div class="project-overlay">
+                        <button class="btn btn-primary btn-zoom">View Project</button>
+                    </div>
+                </div>
+                <div class="project-info">
+                    <span class="project-tag">Real Estate UI</span>
+                    <h3 class="project-title">Zenith Real Estate</h3>
+                    <p class="project-desc">Professional and structured landing page for modern property listings.</p>
+                </div>
+            </div>
+
+            <!-- Project Card 11: Aurora Travel Guide -->
+            <div class="project-card glass-panel" data-aos="fade-up" data-aos-delay="800">
+                <div class="project-img-wrapper">
+                    <div class="project-img">
+                        <img src="assets/projects/travel_landing.png" alt="Aurora Travel Guide Landing Page">
+                    </div>
+                    <div class="project-overlay">
+                        <button class="btn btn-primary btn-zoom">View Project</button>
+                    </div>
+                </div>
+                <div class="project-info">
+                    <span class="project-tag">Travel & Adventure</span>
+                    <h3 class="project-title">Aurora Travel Guide</h3>
+                    <p class="project-desc">Vibrant and energetic landing page for a travel agency specializing in adventures.</p>
+                </div>
+            </div>
+
+            <!-- Project Card 12: Pulse AI Startup -->
+            <div class="project-card glass-panel" data-aos="fade-up" data-aos-delay="900">
+                <div class="project-img-wrapper">
+                    <div class="project-img">
+                        <img src="assets/projects/ai_startup_landing.png" alt="Pulse AI Startup Landing Page">
+                    </div>
+                    <div class="project-overlay">
+                        <button class="btn btn-primary btn-zoom">View Project</button>
+                    </div>
+                </div>
+                <div class="project-info">
+                    <span class="project-tag">Tech & Innovation</span>
+                    <h3 class="project-title">Pulse AI Startup</h3>
+                    <p class="project-desc">Cutting-edge landing page for an AI-driven technology startup.</p>
+                </div>
+            </div>
+
+            <!-- Project Card 13: Vertex Creative Agency -->
+            <div class="project-card glass-panel" data-aos="fade-up" data-aos-delay="1000">
+                <div class="project-img-wrapper">
+                    <div class="project-img">
+                        <img src="assets/projects/creative_agency_landing.png" alt="Vertex Creative Agency Landing Page">
+                    </div>
+                    <div class="project-overlay">
+                        <button class="btn btn-primary btn-zoom">View Project</button>
+                    </div>
+                </div>
+                <div class="project-info">
+                    <span class="project-tag">Creative Studio</span>
+                    <h3 class="project-title">Vertex Agency</h3>
+                    <p class="project-desc">Bold and artistic landing page showcasing a modern design agency's portfolio.</p>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+</section>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jacqueline Soriano | Graphic Designer</title>
+    <meta name="description" content="Portfolio of Jacqueline Soriano. Exploring creative design with a strong visual sense.">
+    
+    <!-- AOS Animation -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Base CSS -->
+    <link rel="stylesheet" href="css/variables.css">
+    <link rel="stylesheet" href="css/global.css">
+    
+    <!-- Component CSS -->
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/hero.css">
+    <link rel="stylesheet" href="css/about.css">
+    <link rel="stylesheet" href="css/projects.css">
+    <link rel="stylesheet" href="css/archive.css">
+    <link rel="stylesheet" href="css/contact.css">
+    <link rel="stylesheet" href="css/footer.css">
+</head>
+<body>
+    <div data-component="navbar" style="transition: opacity 0.4s ease-in-out;"></div>
+    <div data-component="hero" style="transition: opacity 0.4s ease-in-out;"></div>
+    
+    <main style="transition: opacity 0.4s ease-in-out;">
+        <div data-component="about"></div>
+        <div data-component="projects"></div>
+        <div data-component="contact"></div>
+    </main>
+    
+    <div data-component="footer" style="transition: opacity 0.4s ease-in-out;"></div>
+
+    <!-- AOS Script -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+    
+    <!-- Logic Scripts -->
+    <script src="js/theme.js"></script>
+    <script src="js/navbar.js"></script>
+    <script src="js/hero.js"></script>
+    <script src="js/projects.js"></script>
+    <script src="js/footer.js"></script>
+    
+    <!-- Core Engine -->
+    <script src="js/main.js"></script>
+</body>
+</html>

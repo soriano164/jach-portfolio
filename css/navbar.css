@@ -7,6 +7,7 @@
     z-index: 1000;
     transition: all var(--transition-smooth);
     background: transparent;
+    transform: translateY(0);
 }
 
 .navbar.scrolled {
@@ -15,6 +16,10 @@
     backdrop-filter: blur(16px);
     -webkit-backdrop-filter: blur(16px);
     border-bottom: 1px solid var(--border-color);
+}
+
+.navbar.hidden {
+    transform: translateY(-100%);
 }
 
 .navbar-content {

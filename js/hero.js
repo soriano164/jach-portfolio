@@ -26,8 +26,8 @@ function initializeHero() {
 
 function getHeroPortraitByTheme(theme) {
     return theme === 'dark'
-        ? 'assets/img/girl_portrait_dark.png'
-        : 'assets/img/girl_portrait_light.png';
+        ? 'assets/img/girl_portrait_dark.png.png'
+        : 'assets/img/girl_portrait_light.png.jpg';
 }
 
 function updateHeroPortraitByTheme(theme) {
@@ -52,8 +52,8 @@ function initializeHeroMockupLoading() {
     if (mockupLines) mockupLines.classList.add('mockup-lines-loading');
 
     const portraitSources = [
-        'assets/img/girl_portrait_light.png',
-        'assets/img/girl_portrait_dark.png'
+        'assets/img/girl_portrait_light.png.jpg',
+        'assets/img/girl_portrait_dark.png.png'
     ];
     const preloader = new Image();
     const startTime = Date.now();
@@ -85,6 +85,6 @@ function initializeHeroMockupLoading() {
 
     const currentTheme = document.documentElement.getAttribute('data-theme') || 'light';
     preloader.src = currentTheme === 'dark'
-        ? 'assets/img/girl_portrait_dark.png'
-        : 'assets/img/girl_portrait_light.png';
+        ? 'assets/img/girl_portrait_dark.png.png'
+        : 'assets/img/girl_portrait_light.png.jpg';
 }

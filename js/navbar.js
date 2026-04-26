@@ -2,12 +2,42 @@ function initializeNavbar() {
     const navbar = document.querySelector('.navbar');
     
     if (navbar) {
+        let lastScrollY = 0;
+        let scrollDirection = 'up';
+        let scrollTimeout;
+
         window.addEventListener('scroll', () => {
-            if (window.scrollY > 50) {
+            const currentScrollY = window.scrollY;
+
+            // Detect scroll direction
+            if (currentScrollY > lastScrollY) {
+                scrollDirection = 'down';
+            } else {
+                scrollDirection = 'up';
+            }
+
+            lastScrollY = currentScrollY;
+
+            // Clear previous timeout
+            clearTimeout(scrollTimeout);
+
+            // Add scrolled styles (background, blur, etc.)
+            if (currentScrollY > 50) {
                 navbar.classList.add('scrolled');
             } else {
                 navbar.classList.remove('scrolled');
+                navbar.classList.remove('hidden');
+                return;
             }
+
+            // Hide navbar on scroll down, show on scroll up
+            scrollTimeout = setTimeout(() => {
+                if (scrollDirection === 'down') {
+                    navbar.classList.add('hidden');
+                } else {
+                    navbar.classList.remove('hidden');
+                }
+            }, 100);
         });
     }
 

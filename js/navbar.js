@@ -3,42 +3,42 @@ function initializeNavbar() {
     
     if (navbar) {
         let lastScrollY = 0;
-        let scrollDirection = 'up';
-        let scrollTimeout;
+        let ticking = false;
 
-        window.addEventListener('scroll', () => {
+        const updateNavbarVisibility = () => {
             const currentScrollY = window.scrollY;
 
-            // Detect scroll direction
-            if (currentScrollY > lastScrollY) {
-                scrollDirection = 'down';
+            // Only apply hide/show effect when scrolled past 50px
+            if (currentScrollY > 50) {
+                if (currentScrollY > lastScrollY) {
+                    // Scrolling DOWN - hide navbar
+                    navbar.classList.add('hidden');
+                } else {
+                    // Scrolling UP - show navbar
+                    navbar.classList.remove('hidden');
+                }
             } else {
-                scrollDirection = 'up';
+                // At top - always show navbar
+                navbar.classList.remove('hidden');
             }
-
-            lastScrollY = currentScrollY;
-
-            // Clear previous timeout
-            clearTimeout(scrollTimeout);
 
             // Add scrolled styles (background, blur, etc.)
             if (currentScrollY > 50) {
                 navbar.classList.add('scrolled');
             } else {
                 navbar.classList.remove('scrolled');
-                navbar.classList.remove('hidden');
-                return;
             }
 
-            // Hide navbar on scroll down, show on scroll up
-            scrollTimeout = setTimeout(() => {
-                if (scrollDirection === 'down') {
-                    navbar.classList.add('hidden');
-                } else {
-                    navbar.classList.remove('hidden');
-                }
-            }, 100);
-        });
+            lastScrollY = currentScrollY;
+            ticking = false;
+        };
+
+        window.addEventListener('scroll', () => {
+            if (!ticking) {
+                window.requestAnimationFrame(updateNavbarVisibility);
+                ticking = true;
+            }
+        }, { passive: true });
     }
 
     bindNavbarAnchorScroll();
